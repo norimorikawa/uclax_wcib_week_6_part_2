@@ -4,23 +4,87 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Week 6, Part 1</title>
+    <title>Week 6, Part 2</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="icon" type="image/png" href="/images/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="text-center">
 
-    <h1>Week 6, Part 1</h1>
+      <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+          <div class="inner">
+            <h3 class="masthead-brand">Soda Pow</h3>
+            <nav class="nav nav-masthead justify-content-center">
+              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Contact</a>
+            </nav>
+          </div>
+        </header>
 
-	</body>
+        <main class="inner cover">
+          <img src="images/soda1.jpg" alt="soda can">
+          <h1 class="cover-heading">THE SUPER HERO SODA</h1>
+          <p class="lead">Hard Core Sugar High <br>
+          </p>
+          <!-- Button trigger modal -->
+          <button class="btn btn-lg btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">
+            Learn More
+          </button>
 
-</html>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">5 New Flavors</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                <span id="result"> </span>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick = "setInterval(getRandomImage, 2000)"> Generate Image </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end of Button Trigger Modal -->
+          <!--<p class="lead">
+            <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+          </p>-->
+        </main>
+
+        <footer class="mastfoot mt-auto">
+          <div class="inner">
+            <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          </div>
+        </footer>
+      </div>
+
+
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="../../assets/js/vendor/popper.min.js"></script>
+      <script src="../../dist/js/bootstrap.min.js"></script>
+    </body>
+  </html>
